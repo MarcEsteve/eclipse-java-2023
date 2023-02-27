@@ -4,15 +4,16 @@ public class Main1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// crear una instancia de la clase Scanner pasando System.in al constructor 
+		// Crear una instancia de la clase Scanner pasando System.in al constructor 
 		Scanner keyboard = new Scanner(System.in);
 		System.out.printf("Escribe en pantalla un número: ", keyboard);
 		// el programa se detiene en este punto hasta que el usuario introduza un número 		y pulse ENTER
 		int numero = keyboard.nextInt();
+		//String letra = keyboard.next();
 		boolean valors=true;
-		// cerrar la instancia de la clase Scanner 
+		
 		while(valors) {
-			if (1 == 1) {
+			if (numero == 1) {
 				System.out.println("Gestores");
 				System.out.printf("Escribe en pantalla un número: ", keyboard);
 				numero = keyboard.nextInt();
@@ -33,10 +34,12 @@ public class Main1 {
 				System.out.printf("Escribe en pantalla un número: ", keyboard);
 				numero = keyboard.nextInt();
 			} else {
+				// cerrar la instancia de la clase Scanner 
 				keyboard.close();
 				valors=false;
-				System.out.println("Salir");
+				System.out.println("Saliendo del WHILE");
 			}	
 		}
+		System.out.println("Fin del programa (fuera del bucle)");
 	}
 }
