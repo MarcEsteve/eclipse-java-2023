@@ -59,6 +59,36 @@ public class Main {
 		// las tres variables declaradas son de tipo entero 
 		int num1 = 1, num2 = 2, num3 = 86;
 		System.out.printf("%d, %d y %d", num1, num2, num3).println();
+		// declaración de variables que no son inicializadas 
+		int provA;
+		int provB;
+		// error porque antes de utilizar la variable es necesario que tome algún valor
+		//System.out.println(provA);
+		provB = 5;
+		// correcto porque a la variable b se le ha asignado previamente un valor 
+		System.out.println(provB);
+		// la variable a es declarada dentro del bloque del método main 
+		int aScope = 5;
+		// la variable b es declarada sin ningún valor dentro del bloque del método main 
+		int bScope;
+		// b tomará un valor siempre, independientemente del valor de a 
+		if (aScope == 5) {
+			bScope = 3;
+		} else { 
+			bScope = 4;
+		}
+		// ahora ya no se producirá ningún error porque b tendrá valor siempre en este 		punto del código
+		System.out.println("Resultado:");
+		System.out.println(bScope);
+		//Pruebas de SCOPE 3
+		int aScope3 = 5;
+		int bScope3 = 8;
+		// b tomará un valor siempre, independientemente del valor de a 
+		if (aScope3 == 5) {
+			bScope3 = 3;
+		} 
+		// ahora ya no se producirá ningún error porque b tendrá valor siempre en este 		punto del código
+		System.out.println("Resultado segundo SCOPE:");
+		System.out.println(bScope3);
 	}
-
 }
