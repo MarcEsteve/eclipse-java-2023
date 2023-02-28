@@ -45,6 +45,9 @@ public class Estudiante {
 	//Métodos
 	public void mostrarInfo() {}
 	public void agregarNuevaNote() {}
+	public static Estudiante crearEstudiante() {
+		return new Estudiante();
+	}
 	
 	//Setters y getters
 	public int getId() {
