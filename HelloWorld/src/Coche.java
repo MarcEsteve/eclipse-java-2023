@@ -41,8 +41,22 @@ public class Coche {
 	public static final float factorConversionCvKw = 1.35f;
 	//Métodos
 	public void parar() {}
-	public void acelerar() {}
-	public void desacelerar() {}
+	public void acelerar() {
+		this.velocidad += 5;
+	}
+	public void acelerar(float incrementoVelocidad) {
+		this.velocidad += incrementoVelocidad;
+	}
+	public void desacelerar() {
+		this.velocidad -= 5;
+	}
+	public void desacelerar(float decrementoVelocidad) {
+		this.velocidad -= decrementoVelocidad;
+	}
+	public void desacelerar(boolean marchaAtras) {
+		if(marchaAtras) this.velocidad = -5.0f;
+		else desacelerar();
+	}
 	public void girarIzquierda() {}
 	public void girarDerecha() {}
 	

@@ -14,5 +14,18 @@ public class MainCoche {
 		System.out.printf("%f Kw",kw).println();
 		float cv = Coche.convertirKwCv(kw);
 		System.out.printf("%f CV",cv).println();
+		
+		//Instancia opel
+		Coche opel = new Coche(100.0f,150.0f,7,4);
+		System.out.println(opel.getVelocidad());
+		opel.acelerar();
+		System.out.println(opel.getVelocidad());
+		opel.desacelerar();
+		System.out.println(opel.getVelocidad());
+		opel.desacelerar(20.0f);
+		System.out.println(opel.getVelocidad());
+		opel.desacelerar(true);
+		System.out.println(opel.getVelocidad());
+		
 	}
 }
