@@ -2,37 +2,65 @@ import java.util.Scanner;
 
 public class Main4 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String[] resps = { "Gestores", "Clientes", "Transferencias", "Mensajes", 		"Préstamos", "Salir" };
-		boolean online = true;
+    public static void main(String[] args) {
 
-		while (online) {
-			System.out.println(
-					"\n---\n1. Gestores\n2. Clientes\n"
-					+ "3. Transferencias\n4. Mensajes\n5. Préstamos"
-					+ "\n6. Salir\n---");
+        Scanner scanner = new Scanner(System.in);
+        String opcion = "";
 
-			Scanner keyboard = new Scanner(System.in);
-			System.out.printf("Decime un número: ", keyboard);
+        System.out.println("1 --> Gestores");
+        System.out.println("2 --> Clientes");
+        System.out.println("3 --> Transferencias");
+        System.out.println("4 --> Mensajes");
+        System.out.println("5 --> Préstamos");
+        System.out.println("S --> Salir");
 
-			int numero = keyboard.nextInt();
+        while (!opcion.equals("S")) {
+            System.out.println("Ingrese un número (opción):");
+            opcion = scanner.nextLine();
 
-			if (numero > resps.length) {
-				System.out.printf("Decime otro número: ", keyboard);
-				numero = keyboard.nextInt();
-			}
+            switch (opcion) {
+            case "1":
+                MostrarGestores();
+                break;
+            case "2":
+                MostrarClientes();
+                break;
+            case "3":
+                MostrarTransferencias();
+                break;
+            case "4":
+                MostrarMensajes();
+                break;
+            case "5":
+                MostrarPrestamos();
+                break;
+            case "S":
+                System.out.println("Ha salido del programa.");
+                break;
+            default:
+                System.out.println("Opción inválida.");
+                break;
+            }
+        }
 
-			if (numero < resps.length) {
-				System.out.println(resps[numero - 1]);
-			}
+        scanner.close();
 
-			if (numero == resps.length) {
-				keyboard.close();
-				online = false;
-				System.out.println("Fin del programa");
-			}
-		}
-	}
 
+    }
+
+    public static void MostrarGestores() {
+        System.out.println("Ha seleccionado Gestores.");
+    }
+    public static void MostrarClientes() {
+        System.out.println("Ha seleccionado Clientes.");
+    }
+    public static void MostrarTransferencias() {
+        System.out.println("Ha seleccionado Transferencias.");
+    }
+    public static void MostrarMensajes() {
+        System.out.println("Ha seleccionado Mensajes.");
+    }
+    public static void MostrarPrestamos() {
+        System.out.println("Ha seleccionado Prestamos.");
+    }
 }
