@@ -40,11 +40,26 @@ public class Estudiante {
 	private int edad;
 	private int telefono;
 	private int numeroNotas;
-	private int sumaNotas;
-	private float notaMedia;
+	private float sumaNotas;
+	private float notaMedia=sumaNotas/numeroNotas;
 	//Métodos
 	public void mostrarInfo() {}
-	public void agregarNuevaNote() {}
+	public void agregarNuevaNota() {
+		this.numeroNotas++;
+		this.sumaNotas += notaMedia; //Para mantener 		la nota media	
+	}
+	public void agregarNuevaNota(float nuevaNota) {
+		this.numeroNotas++;
+		this.sumaNotas += nuevaNota;
+	}
+	public void agregarNuevaNota(boolean reinicio) {
+		if(reinicio) {
+			this.numeroNotas=0;	
+			this.sumaNotas=0.0f;	
+			this.notaMedia=0.0f;
+		}
+		else agregarNuevaNota();
+	}
 	public static Estudiante crearEstudiante() {
 		return new Estudiante();
 	}
@@ -74,10 +89,10 @@ public class Estudiante {
 	public void setNumeroNotas(int numeroNotas) {
 		this.numeroNotas = numeroNotas;
 	}
-	public int getSumaNotas() {
+	public float getSumaNotas() {
 		return sumaNotas;
 	}
-	public void setSumaNotas(int sumaNotas) {
+	public void setSumaNotas(float sumaNotas) {
 		this.sumaNotas = sumaNotas;
 	}
 	public float getNotaMedia() {
@@ -87,3 +102,4 @@ public class Estudiante {
 		this.notaMedia = notaMedia;
 	}
 }
+	
