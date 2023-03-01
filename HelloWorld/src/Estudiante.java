@@ -1,5 +1,5 @@
 
-public class Estudiante {
+public class Estudiante extends Persona {
 	//Constructores
 	public Estudiante() {
 		this.id=1;
@@ -36,9 +36,6 @@ public class Estudiante {
 	}
 	
 	//Atributos
-	private int id;
-	private int edad;
-	private int telefono;
 	private int numeroNotas;
 	private float sumaNotas;
 	private float notaMedia=sumaNotas/numeroNotas;

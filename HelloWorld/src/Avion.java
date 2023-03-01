@@ -12,6 +12,9 @@ public class Avion extends Vehiculo{
 	//Métodos
 	public void volar() {}
 	public void aterrizaje() {}
+	public void parar() {
+		System.out.println("Método del avión");
+	}
 	
 	//Getters y setters
 	public boolean isTrenAterrizaje() {

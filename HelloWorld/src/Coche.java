@@ -36,7 +36,9 @@ public class Coche extends Vehiculo {
 	
 	//Métodos
 	public static final float factorConversionCvKw = 1.35f;
-	public void parar() {}
+	public void parar() {
+		System.out.println("Método del coche");
+	}
 	public void acelerar() {
 		this.velocidad += 5;
 	}

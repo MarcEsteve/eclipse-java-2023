@@ -1,11 +1,12 @@
 
-public class Vehiculo {
+public abstract class Vehiculo {
 	//Atributos
 	protected float velocidad;
 	protected int asientos;
 	protected int ruedas;
 	//Métodos
-	public void parar() {}
+	public abstract void parar();
+	
 	public void acelerar() {}
 	public void desacelerar() {}
 	public void girarIzquierda() {}

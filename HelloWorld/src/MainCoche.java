@@ -27,5 +27,18 @@ public class MainCoche {
 		opel.desacelerar(true);
 		System.out.println(opel.getVelocidad());
 		
+		//Ejemplo de POLIORFISMO
+		Bicicleta bh = new Bicicleta();
+		Coche honda = new Coche();
+		Avion boeing = new Avion();	
+		//Vehiculo es clase abastracta no puede instanciar
+//		Vehiculo moto = new Vehiculo();
+		MainCoche.invocarParar(bh);
+		MainCoche.invocarParar(honda);
+		MainCoche.invocarParar(boeing);
+	}
+	
+	public static void invocarParar(Vehiculo vehiculo) {
+		vehiculo.parar();
 	}
 }

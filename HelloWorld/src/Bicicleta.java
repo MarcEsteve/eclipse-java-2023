@@ -16,4 +16,10 @@ public class Bicicleta extends Vehiculo {
 	public void setCambios(int cambios) {
 		this.cambios = cambios;
 	}
+	@Override
+	public void parar() {
+		// TODO Auto-generated method stub
+		System.out.println("Método de la bici");
+
+	}
 }
