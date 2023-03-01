@@ -1,11 +1,9 @@
 
-public class Coche {
+public class Coche extends Vehiculo {
 	//Constructores
 	public Coche() {
-		this.velocidad = 100.0f;
+		super();
 		this.caballos = 200.0f;
-		this.asientos = 5;
-		this.ruedas = 4;
 	}
 	public Coche(float velocidad) {
 		this.velocidad = velocidad;
@@ -33,13 +31,11 @@ public class Coche {
 		this.asientos = asientos;
 		this.ruedas = ruedas;
 	}
-	//Atributos
-	private float velocidad;
+	//Atributos;
 	private float caballos;
-	private int asientos;
-	private int ruedas;
-	public static final float factorConversionCvKw = 1.35f;
+	
 	//Métodos
+	public static final float factorConversionCvKw = 1.35f;
 	public void parar() {}
 	public void acelerar() {
 		this.velocidad += 5;
