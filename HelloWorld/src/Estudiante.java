@@ -98,5 +98,11 @@ public class Estudiante extends Persona {
 	public void setNotaMedia(float notaMedia) {
 		this.notaMedia = notaMedia;
 	}
+
+	@Override
+	public void mostrarID() {
+		// TODO Auto-generated method stub
+		System.out.printf("%d - %f",getId(),getNotaMedia());
+	}
 }
 	
