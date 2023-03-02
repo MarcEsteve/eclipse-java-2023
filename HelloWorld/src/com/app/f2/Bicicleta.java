@@ -1,4 +1,6 @@
-package com.app.f1;
+package com.app.f2;
+
+import com.app.f1.Vehiculo;
 
 public class Bicicleta implements Vehiculo {
 	//Constructores

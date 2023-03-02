@@ -1,4 +1,4 @@
-package com.app.personas;
+package com.app.info;
 
 public abstract class Persona  implements PersonaInterfaz {
 	//Atributos

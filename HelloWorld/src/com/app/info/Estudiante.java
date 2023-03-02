@@ -1,4 +1,4 @@
-package com.app.personas;
+package com.app.info;
 public class Estudiante extends Persona{
 	//Constructores
 	public Estudiante() {

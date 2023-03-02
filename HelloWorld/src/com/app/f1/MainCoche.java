@@ -1,4 +1,7 @@
 package com.app.f1;
+
+import com.app.f2.Bicicleta;
+
 public class MainCoche {
 
 	public static void main(String[] args) {

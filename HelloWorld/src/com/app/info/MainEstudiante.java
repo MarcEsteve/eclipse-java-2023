@@ -1,4 +1,4 @@
-package com.app.personas;
+package com.app.info;
 public class MainEstudiante {
 
 	public static void main(String[] args) {
