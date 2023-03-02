@@ -25,7 +25,7 @@ public class Circulo extends Figura implements Dibujable {
 	@Override
 	public double area() {
 		// TODO Auto-generated method stub
-		return pi * Math.pow(radio, 2);
+		return PI * Math.pow(radio, 2);
 	}
 	//Getters y setters
 	public float getRadio() {

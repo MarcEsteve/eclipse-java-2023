@@ -1,5 +1,4 @@
-import com.app.f1.Coche;
-
+package com.app.f1;
 public class MainRefDosInstancias {
 
 	public static void main(String[] args) {
@@ -11,11 +10,9 @@ public class MainRefDosInstancias {
 		System.out.println(audi.getAsientos());
 		
 	}
-	
 	public static void cambiarValor(Coche audi) {
 		audi = new Coche();
 		//Cambia a 4 asientos
 		audi.setAsientos(4);
 	}
-
 }

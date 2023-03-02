@@ -1,4 +1,4 @@
-package com.app.proyecto;
+package com.banco;
 import java.util.Scanner;
 
 public class Main1 {

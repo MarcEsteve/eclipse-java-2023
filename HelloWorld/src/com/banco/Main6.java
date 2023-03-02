@@ -1,13 +1,12 @@
-package com.app.proyecto;
+package com.banco;
 import java.util.Scanner;
 
-public class Main4 {
+public class Main6 {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         String opcion = "";
-
         System.out.println("1 --> Gestores");
         System.out.println("2 --> Clientes");
         System.out.println("3 --> Transferencias");
@@ -43,12 +42,8 @@ public class Main4 {
                 break;
             }
         }
-
         scanner.close();
-
-
     }
-
     public static void MostrarGestores() {
         System.out.println("Ha seleccionado Gestores.");
     }
@@ -64,4 +59,5 @@ public class Main4 {
     public static void MostrarPrestamos() {
         System.out.println("Ha seleccionado Prestamos.");
     }
+
 }
