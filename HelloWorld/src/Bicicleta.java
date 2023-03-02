@@ -20,6 +20,5 @@ public class Bicicleta extends Vehiculo {
 	public void parar() {
 		// TODO Auto-generated method stub
 		System.out.println("Método de la bici");
-
 	}
 }
