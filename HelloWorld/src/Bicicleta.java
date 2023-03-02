@@ -1,5 +1,5 @@
 
-public class Bicicleta extends Vehiculo {
+public class Bicicleta implements Vehiculo {
 	//Constructores
 	public Bicicleta() {
 		this.cambios= 15;
@@ -20,5 +20,25 @@ public class Bicicleta extends Vehiculo {
 	public void parar() {
 		// TODO Auto-generated method stub
 		System.out.println("Método de la bici");
+	}
+	@Override
+	public void acelerar() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void desacelerar() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void girarIzquierda() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void girarDerecha() {
+		// TODO Auto-generated method stub
+		
 	}
 }

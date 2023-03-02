@@ -102,7 +102,8 @@ public class Estudiante extends Persona {
 	@Override
 	public void mostrarID() {
 		// TODO Auto-generated method stub
-		System.out.printf("%d - %f",getId(),getNotaMedia());
+		System.out.printf("%d - %f"
+				+ "",getId(),getNotaMedia());
 	}
 }
 	

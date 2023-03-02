@@ -1,5 +1,5 @@
 
-public class Coche extends Vehiculo {
+public class Coche implements Vehiculo {
 	//Constructores
 	public Coche() {
 		super();
@@ -33,6 +33,9 @@ public class Coche extends Vehiculo {
 	}
 	//Atributos;
 	private float caballos;
+	private float velocidad;
+	private int asientos;
+	private int ruedas;
 	
 	//Métodos
 	public static final float factorConversionCvKw = 1.35f;

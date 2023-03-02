@@ -1,5 +1,5 @@
 
-public class Avion extends Vehiculo{
+public class Avion implements Vehiculo{
 	//Constructores
 	public Avion() {
 		this.trenAterrizaje = true;
@@ -22,6 +22,26 @@ public class Avion extends Vehiculo{
 	}
 	public void setTrenAterrizaje(boolean trenAterrizaje) {
 		this.trenAterrizaje = trenAterrizaje;
+	}
+	@Override
+	public void acelerar() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void desacelerar() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void girarIzquierda() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void girarDerecha() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }
