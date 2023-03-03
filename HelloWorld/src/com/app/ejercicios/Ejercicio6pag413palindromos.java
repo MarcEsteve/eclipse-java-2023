@@ -1,6 +1,6 @@
 package com.app.ejercicios;
 
-public class Ejercicio3pag413 {
+public class Ejercicio6pag413palindromos {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
