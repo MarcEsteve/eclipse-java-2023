@@ -15,7 +15,7 @@ public class PruebaConexion {
 			puerto: 3306
 			base de datos: banco 
 			usuario: banco 
-			contraseña: banco
+			contraseña: fullstack
 			*/
 			Connection conexion = 
 			DriverManager.getConnection("jdbc:mysql://localhost:3306/banco",
