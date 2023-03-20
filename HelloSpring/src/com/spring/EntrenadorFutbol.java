@@ -1,11 +1,11 @@
 package com.spring;
 
-public class EntrenadorFutbol implements Entrenador {
+import org.springframework.stereotype.Component;
 
-	@Override
+//mientrenador es el id del bean 
+@Component
+public class EntrenadorFutbol implements Entrenador {
 	public String getEntrenamiento() {
-		// TODO Auto-generated method stub
 		return "Correr durante 30 minutos";
 	}
-	
 }

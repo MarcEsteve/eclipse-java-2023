@@ -15,12 +15,17 @@ public class MainSpring {
 		bean a recibir, realizando 
 		una especie casting
 		*/
-		Entrenador entrenaFut = context.getBean("mientrenaFut",
-				Entrenador.class); 
-		System.out.println(entrenaFut.getEntrenamiento());
-		Entrenador entrenaBal = context.getBean("mientrenaBal",
-				Entrenador.class); 
-		System.out.println(entrenaBal.getEntrenamiento());
+//		Entrenador entrenaFut = context.getBean("mientrenaFut",
+//				Entrenador.class); 
+//		System.out.println(entrenaFut.getEntrenamiento());
+//		Entrenador entrenaBal = context.getBean("mientrenaBal",
+//				Entrenador.class); 
+//		System.out.println(entrenaBal.getEntrenamiento());
+		
+		Entrenador entrenador = context.getBean("entrenadorFutbol", 
+				Entrenador.class);
+		System.out.println(entrenador.getEntrenamiento());
+		
 		// cierra el contexto 
 		context.close();
 	}
